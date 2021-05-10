@@ -11,20 +11,17 @@
 
         <div class="maindiv">
 
-            Interest Rate:
-
-                <input type="range"
+             Interest Rate:
+            <span id="rate_val">
+                10.25%
+            </span>
+                <input type="range" 
                 id="rate"
                 min="1"
                 max="20"
+                step=".25"
                 value="10.25">
 
-                <span id="rate_val">
-                    10.25%
-                </span>
-
-                <select onchange="updateRate()">
-                </select> <br />
 
                 Amount: <input type="number" id="principal"> <br />
 
