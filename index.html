@@ -11,22 +11,15 @@
 
         <div class="maindiv">
 
-             Interest Rate:
-            <span id="rate_val">
-                10.25%
-            </span>
-                <input type="range" 
-                id="rate"
-                min="1"
-                max="20"
-                step=".25"
-                value="10.25">
+            Amount: <input type="number" id="principal"> <br/>
 
+            Rate <input id="slider" type="range" min="1" max="20" step=".25"value="10.25"
+            oninput="sliderChange(this.value)">
+            <output id="sliderVal"></output>
+            <br/>
 
-                Amount: <input type="number" id="principal"> <br />
-
-              No. of Years:<input type="dropdown" id="years" list="year">
-                <datalist id="year">
+                No. of Years:<input type="dropdown" id="years" list="year">
+                    <datalist id="year">
                     <option value="1"></option>
                     <option value="2"></option>
                     <option value="3"></option>
@@ -37,21 +30,19 @@
                     <option value="8"></option>
                     <option value="9"></option>
                     <option value="10"></option>
-                </datalist> <br/>
+                    </datalist> <br/>
 
-               <button onclick="compute()
-            ">Compute Interest</button>
-            <span id="result">
+                    Interest: <span id="result"></span> <br/>
 
+                <button onclick="compute()
+                ">Compute Interest</button>
 
-            </span><br/>
+                    <span id="result"></span> <br/>
 
-                <footer>
+                    <footer>
                     &#169;
                     This Calculator belongs to Erin Downey
-                 </footer>
-
-
+                    </footer>
         </div>
     </div>
 </html>
