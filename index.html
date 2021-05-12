@@ -1,22 +1,25 @@
-<html>
+
     <!DOCTYPE html>
-        <title>Simple Interest Calculator</title>
+
     <head>
+        <title>Simple Interest Calculator</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
 
-    <div>
-        <h1>Simple Interest Calculator</h1>
+    <body>
 
         <div class="maindiv">
 
+            <h1>Simple Interest Calculator</h1>
+
             Amount: <input type="number" id="principal"> <br/>
 
-            Rate <input id="slider" type="range" min="1" max="20" step=".25"value="10.25"
+            Rate <input id="slider" type="range" min="50" max="100" step="10"
             oninput="sliderChange(this.value)">
             <output id="sliderVal"></output>
             <br/>
+
 
                 No. of Years:<input type="dropdown" id="years" list="year">
                     <datalist id="year">
@@ -32,17 +35,17 @@
                     <option value="10"></option>
                     </datalist> <br/>
 
-                    Interest: <span id="result"></span> <br/>
 
                 <button onclick="compute()
                 ">Compute Interest</button>
 
-                    <span id="result"></span> <br/>
+                <span id="result"></span> <br/>
 
                     <footer>
                     &#169;
                     This Calculator belongs to Erin Downey
                     </footer>
+
         </div>
-    </div>
+    </body>
 </html>
