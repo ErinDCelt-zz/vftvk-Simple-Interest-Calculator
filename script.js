@@ -9,7 +9,7 @@ function compute() {
     function num() {
         var v = document.getElementById("principal").value;
         if (v <= 0) {
-            alert("Value should be a positive number")
+            alert("Value should be a positive number");
         }
     }
 
