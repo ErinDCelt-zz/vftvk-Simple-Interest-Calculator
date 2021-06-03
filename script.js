@@ -19,15 +19,34 @@ const compute = () => {
     var result = document.getElementById("result");
     result.innerHTML = "If you deposit " + p + ",  at an interest rate of " + r + "%.  You will receive an amount of " + amt + ",  in the year" + year;
 
-
 }
 
-function num() {
-    var v = document.getElementById("principal").value;
-    if (v <= 0) {
-        alert("Value should be a positive number");
+
+
+
+
+
+
+
+
+
+
+// function num() {
+const number = prompt("Enter a number:  ");
+    if (number >= 0) {
+        console.log("Value should be more than 0");
+    } else {
+        console.log("Value should be a positive number");
     }
-}
+// }
+
+//
+    // console.log("Value should be a positive number")
+    // var v = document.getElementById("principal").value;
+    // if (v <= 0) {
+        // alert("Value should be a positive number");
+    // }
+// }
 
 function sliderChange(val) {
     document.getElementById("rate").value = val;
