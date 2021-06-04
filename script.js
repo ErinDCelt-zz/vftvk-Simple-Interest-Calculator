@@ -21,32 +21,29 @@ const compute = () => {
 
 }
 
+function num() {
 
-
-
-
-
-
-
-
-
-
-// function num() {
-const number = prompt("Enter a number:  ");
-    if (number >= 0) {
-        console.log("Value should be more than 0");
-    } else {
-        console.log("Value should be a positive number");
+     console.log("Value should be a positive number")
+    var v = document.getElementById("principal").value;
+    if (v <= 0) {
+        alert("Value should be a positive number");
     }
-// }
-
-//
-    // console.log("Value should be a positive number")
-    // var v = document.getElementById("principal").value;
-    // if (v <= 0) {
-        // alert("Value should be a positive number");
+}
+    // const number = prompt("Enter a number:  ");
+    // if (number >= 0) {
+        // console.log("Value should be more than 0");
+    // } else {
+        // console.log("Value should be a positive number");
     // }
 // }
+// }
+
+
+
+
+
+
+
 
 function sliderChange(val) {
     document.getElementById("rate").value = val;
