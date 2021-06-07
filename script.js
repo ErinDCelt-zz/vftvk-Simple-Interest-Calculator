@@ -22,13 +22,39 @@ const compute = () => {
 }
 
 function num() {
-
-     console.log("Value should be a positive number")
     var v = document.getElementById("principal").value;
+    // console.log("Value should be a positive number");
     if (v <= 0) {
         alert("Value should be a positive number");
+    } else {
+        var i = v;
+        while (i <= 0) {
+            text += "<br> The number is  " + i;
+            i++;
+            if (i >= 0) {
+                break
+            }
+        }
+
     }
 }
+
+
+
+
+
+
+
+
+
+    // }
+
+
+
+
+
+
+// }
     // const number = prompt("Enter a number:  ");
     // if (number >= 0) {
         // console.log("Value should be more than 0");
@@ -45,6 +71,6 @@ function num() {
 
 
 
-function sliderChange(val) {
-    document.getElementById("rate").value = val;
-}
+    function sliderChange(val) {
+        document.getElementById("rate").value = val;
+    }
