@@ -7,8 +7,6 @@ const compute = () => {
 
     var y = document.getElementById("years").value;
 
-    // var result = document.getElementById("principal").value;
-
     var dateobj = new Date();
     var B = dateobj.getFullYear();
     var year = B + y;
@@ -17,13 +15,13 @@ const compute = () => {
 
     var amt = interest;
     var result = document.getElementById("result");
-    result.innerHTML = "If you deposit " + p + ",  at an interest rate of " + r + "%.  You will receive an amount of " + amt + ",  in the year" + year;
+    result.innerHTML = "If you deposit $" + p + "  at an interest rate of " + r + "%.  You will receive an amount of $" + amt + ",  in the year"+ year;
 
 }
 
 function num() {
     var v = document.getElementById("principal").value;
-    // console.log("Value should be a positive number");
+
     if (v <= 0) {
         alert("Value should be a positive number");
     } else {
@@ -38,38 +36,6 @@ function num() {
 
     }
 }
-
-
-
-
-
-
-
-
-
-    // }
-
-
-
-
-
-
-// }
-    // const number = prompt("Enter a number:  ");
-    // if (number >= 0) {
-        // console.log("Value should be more than 0");
-    // } else {
-        // console.log("Value should be a positive number");
-    // }
-// }
-// }
-
-
-
-
-
-
-
 
     function sliderChange(val) {
         document.getElementById("rate").value = val;
